@@ -1,0 +1,7 @@
+public int sumDouble(int a, int b) {
+  int result = a+b;
+  if(a==b){
+    return result*2;
+  }else 
+  return result;
+}
