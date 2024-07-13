@@ -1,0 +1,9 @@
+public String comboString(String a, String b) {
+
+int counta = a.length();
+int countb = b.length();
+if (counta>countb){
+  return b+a+b;
+}return a+b+a;
+
+}
