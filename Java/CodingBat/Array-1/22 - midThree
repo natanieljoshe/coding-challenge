@@ -1,0 +1,11 @@
+public int[] midThree(int[] nums) {
+  
+  int[] res = new int[3];
+  int start= ((nums.length-1)/2)-1;
+  
+  res[0] = nums[start];
+  res[1] = nums[start+1];
+  res[2] = nums[start+2];
+  return res;
+  
+}
