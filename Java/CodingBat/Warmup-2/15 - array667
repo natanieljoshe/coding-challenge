@@ -1,0 +1,17 @@
+public int array667(int[] nums) {
+  
+  int count=0;
+  
+  for(int i=0;i<(nums.length-1);i++){
+  int end = i+1;
+  if(end>nums.length){
+    end = nums.length;
+  }
+  if(nums[i]==6 && (nums[end]==6 ||nums[end]==7)){
+    count++;
+  }
+  }
+  
+  return count;
+  
+}
