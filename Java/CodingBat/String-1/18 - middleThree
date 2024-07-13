@@ -1,0 +1,10 @@
+public String middleThree(String str) {
+  
+  
+    double length = str.length();
+    int count = (int)Math.floor(length/2);
+    
+    String res =str.substring(count-1, count+2);
+    return res;
+  
+}
