@@ -1,0 +1,16 @@
+public int close10(int a, int b) {
+  int closea;
+  int closeb;
+  
+  closea = Math.abs(10-a);
+  closeb = Math.abs(10-b);
+  
+  if(closea<closeb){
+    return a;
+  }else if(closeb<closea){
+    return b;
+  }else{
+    return 0;
+  }
+  
+}
