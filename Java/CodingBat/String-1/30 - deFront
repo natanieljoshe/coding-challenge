@@ -1,0 +1,14 @@
+public String deFront(String str) {    
+  
+  String back = str.substring(2,str.length());
+  String front = "";
+  
+  if(str.substring(0,1).equals("a")){
+    front = "a";
+    }if(str.substring(1,2).equals("b")){
+    front = front+"b";
+    
+  }return front+back;
+  
+  
+}
