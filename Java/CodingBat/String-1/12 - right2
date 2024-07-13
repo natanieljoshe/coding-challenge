@@ -1,0 +1,8 @@
+public String right2(String str) {
+  
+  String back = "";
+  back = str.substring(str.length()-2,str.length());
+  return back+str.substring(0,str.length()-2);
+  
+  
+}
