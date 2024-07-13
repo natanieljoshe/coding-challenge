@@ -1,0 +1,19 @@
+public String withoutX2(String str) {
+   
+   if(str.length()<=1){
+     return "";
+   }
+   
+   String front1=str.substring(0,1);
+   String front2=str.substring(1,2);
+   String back = str.substring(2);
+   
+   if(front1.equals("x")){
+     front1="";
+   }if(front2.equals("x")){
+     front2="";
+   }
+   
+   return front1+front2+back;
+   
+}
