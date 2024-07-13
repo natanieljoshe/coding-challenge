@@ -1,0 +1,13 @@
+public int[] rotateLeft3(int[] nums) {
+  
+  int [] res = new int[3];
+  int count = 0;
+  
+  for(int i=1;i<nums.length;i++){
+    res[count]=nums[i];
+    count++;
+  } res[2]=nums[0];
+  return res;
+  
+  
+}
