@@ -1,0 +1,17 @@
+public String extraFront(String str) {
+  
+  String temp="";
+  int end=2;
+  if(end>str.length()){
+    end = str.length();
+  }
+  
+  
+  if(str.length()>=2){
+    temp= str.substring(0,end);
+    return temp+temp+temp;
+    
+  }
+  return str+str+str;
+  
+}
