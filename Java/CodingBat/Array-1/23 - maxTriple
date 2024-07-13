@@ -1,0 +1,14 @@
+public int maxTriple(int[] nums) {
+  
+  int res = nums[0];
+  
+  if(res<nums[((nums.length-1)/2)]){
+    res=nums[((nums.length-1)/2)];
+    
+  }if(res<nums[nums.length-1]){
+    res=nums[nums.length-1];
+  }return res;
+  
+  
+}
+  
