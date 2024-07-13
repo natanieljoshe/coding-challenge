@@ -1,0 +1,15 @@
+public String without2(String str) {
+  
+  if(str.length()<=1){
+    return str;
+  }
+  
+  String front = str.substring(0,2);
+  String back = str.substring(str.length()-2,str.length());
+  
+  if(front.equals(back)){
+    return str.substring(2,str.length());
+  }return str;
+  
+  
+}
