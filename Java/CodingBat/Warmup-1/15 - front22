@@ -1,0 +1,7 @@
+public String front22(String str) {
+  if(str.length()>=2){
+  String front = str.substring(0,2); //it is == 0 & 1 (the 2 is not included)
+  return front+str+front;
+  }
+  return str+str+str;
+}
