@@ -1,0 +1,13 @@
+public int[] frontPiece(int[] nums) {
+  
+  int[] res = new int[2];
+  
+  if(nums.length<=1){
+    return nums;
+  }
+  
+  res[0]=nums[0];
+  res[1]=nums[1];
+  return res;
+  
+}
