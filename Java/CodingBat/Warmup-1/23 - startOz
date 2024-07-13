@@ -1,0 +1,22 @@
+public String startOz(String str) {
+  
+   String res="";
+  
+  if(str.length()>1){
+  String front1 = str.substring(0,1);
+  String front2 = str.substring(1,2);
+  
+  if(front1.equals("o")){
+    res = "o";
+  }
+  
+  if(front2.equals("z")){
+    res = res+ "z";
+  }
+  
+  return res;
+  }return str;
+  
+  
+  
+}
