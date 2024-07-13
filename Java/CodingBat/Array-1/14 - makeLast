@@ -1,0 +1,10 @@
+public int[] makeLast(int[] nums) {
+  
+  // Make a new result array with double the length
+  int[] res = new int [nums.length*2];
+  
+   // Copy over the last element
+  res[res.length-1]=nums[nums.length-1];
+  return res;
+  
+}
