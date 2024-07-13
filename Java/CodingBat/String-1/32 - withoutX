@@ -1,0 +1,17 @@
+public String withoutX(String str) {
+  
+  String res = str;
+  if(res.length()<=1){
+    return "";
+  }
+  String front = str.substring(0,1);
+  String back = str.substring(str.length()-1,str.length());
+  if(front.equals("x") ){
+    res=(res.substring(1));
+  }if(back.equals("x")){
+    res=(res.substring(0,res.length()-1));
+  }
+  return res;
+}
+
+
