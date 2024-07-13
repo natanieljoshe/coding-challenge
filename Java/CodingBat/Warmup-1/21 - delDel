@@ -1,0 +1,15 @@
+public String delDel(String str) {
+  
+  if(str.length()>3){
+     String front = str.substring(0,1);
+    String back = str.substring(4, str.length());
+  
+      if(str.substring(1,4).equals("del")){
+      return front + back;
+  }
+  return str;
+  }return str;
+  
+  
+  
+}
