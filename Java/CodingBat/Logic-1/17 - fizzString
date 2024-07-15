@@ -1,0 +1,14 @@
+public String fizzString(String str) {
+  
+  String res="";
+  
+  if(str.substring(0,1).equals("f")){
+    res = "Fizz";
+  }if(str.substring(str.length()-1,str.length()).equals("b")){
+    res = res+"Buzz";
+  }if(res.equals("")){
+    res=str;
+  }
+  return res;
+  
+}
