@@ -1,0 +1,16 @@
+public boolean endOther(String a, String b) {
+  
+  a = a.toLowerCase();
+  b = b.toLowerCase();
+  
+  if(a.length()<=1){
+    if(a.substring(0).equals(b.substring(b.length()-1))){
+      return true;
+    }
+  }
+    if(a.substring(a.length()-2,a.length()).equals(b.substring(b.length()-2 ,b.length()))){
+      return true;
+    }
+  return false;
+  
+}
