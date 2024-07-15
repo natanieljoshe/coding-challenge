@@ -1,0 +1,13 @@
+public String fizzString2(int n) {
+  
+  String res="";
+  
+  if(n%3==0){
+    res="Fizz";
+  }if(n%5==0){
+    res= res+ "Buzz";
+  }if(res.equals("")){
+    res = Integer.toString(n);
+  }return res+"!";
+  
+}
