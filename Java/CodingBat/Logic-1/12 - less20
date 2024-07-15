@@ -1,0 +1,13 @@
+public boolean less20(int n) {
+  
+  int temp=20;
+  while(temp<n){
+    temp=temp+20;
+  }
+  
+  if(temp-2 ==n || temp-1 == n ){
+    return true;
+  }return false;
+  
+  
+}
