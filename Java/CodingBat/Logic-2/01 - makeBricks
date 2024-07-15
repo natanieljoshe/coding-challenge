@@ -1,0 +1,34 @@
+public boolean makeBricks(int small, int big, int goal) {
+  
+  int res=0;
+  
+  for(int i=0;i<big;i++){
+    
+    res=res+5;
+    
+    if(res>goal){
+      res=res-5;
+      break;
+    }
+    if(res==goal){
+    return true;
+  }
+  }
+  
+  
+  
+  for(int i=0;i<small;i++){
+    
+    res=res+1;
+    
+    if(res>goal){
+      res=res-1;
+      break;
+    }
+  }
+  
+  if(res==goal){
+    return true;
+  }return false;
+  
+}
