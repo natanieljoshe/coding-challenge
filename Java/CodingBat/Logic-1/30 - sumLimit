@@ -1,0 +1,13 @@
+public int sumLimit(int a, int b) {
+  
+  String Sa = String.valueOf(a);
+  String Sb = String.valueOf(b);
+  String sum = String.valueOf(a+b);
+  
+  if(sum.length()==Sa.length()){
+    return a+b;
+  }if(sum.length()>Sa.length()){
+    return a;
+  }return 0;
+  
+}
