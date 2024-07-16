@@ -1,0 +1,27 @@
+public String oneTwo(String str) {
+  
+  String res="";
+  
+  if(str.length()<3){
+    return res;
+  }
+
+  int count=0, end=0;
+  
+    for(int i=2;i<=str.length();i++){
+      res=res + str.charAt(i-1);
+      count++;
+      if(count==2){
+        res = res + str.charAt(i-3);
+        count=0;
+        i++;
+        if(str.length()-i<2){
+        return res;
+      }
+      }
+      
+      
+    }return res;
+
+  
+}
