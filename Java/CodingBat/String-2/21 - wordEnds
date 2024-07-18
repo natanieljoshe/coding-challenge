@@ -1,0 +1,28 @@
+public String wordEnds(String str, String word) {
+  
+  String res="";
+  
+  for(int i=0;i<str.length();i++){
+    
+    int end=i+word.length();
+    if(end>str.length()){
+      end=str.length();
+    }
+    
+    if(str.substring(i,end).equals(word)){
+      if(i>0){
+        res=res+str.charAt(i-1);
+      }
+      if(end<str.length()){
+       res=res+str.charAt(end); 
+      }
+    }
+    
+  }return res;
+  
+}
+
+// XY123 X Y
+// word=XY (2)
+// i=5
+// res= 13
