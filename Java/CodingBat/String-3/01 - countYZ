@@ -1,1 +1,22 @@
+public int countYZ(String str) {
+  
+  int count=0;
+  str = str.toLowerCase();
+  
+  for(int i=1;i<str.length();i++){
+    char temp = str.charAt(i);
+    
+    if(Character.isLetter(temp)!=true && (str.charAt(i-1)=='y' || str.charAt(i-1)=='z')){
+      count++;
+    }
+    
+    if(i==str.length()-1 && (str.charAt(i)=='y' || str.charAt(i)=='z')){
+      count++;
+    }
+    
+  }
+  
+  return count;
+  
+}
 
