@@ -1,0 +1,28 @@
+public String sameEnds(String string) {
+  
+  String res="";
+  
+  int lim=string.length()/2;
+  if((string.length()%2 != 0)){
+    lim=lim+1;
+  }
+  
+  
+  for(int i=string.length()-1;i>=lim;i--){
+    if(string.charAt(0)==string.charAt(i)){
+      if(string.substring(i,string.length()).equals(string.substring(0, string.length()-i ))){
+        res= string.substring(i,string.length());
+      }
+      
+    }
+    
+  }return res;
+  
+}
+/*
+tracing
+xxx
+i=1
+if(x) (x)
+res=x
+*/
