@@ -1,0 +1,27 @@
+public boolean equalIsNot(String str) {
+  
+  int count1=0,count2=0;
+  
+  for(int i=0;i<str.length()-1;i++){
+    int end = i+2;
+    if(end>str.length()){
+      end=str.length();
+    }
+    
+    if(str.substring(i,end).equals("is")){
+      count1++;
+    }
+    
+  }
+  for(int j=0;j<str.length()-2;j++){
+    int end = j+3;
+    if(end>str.length()){
+      end=str.length();
+    }
+    
+    if(str.substring(j,end).equals("not")){
+      count2++;
+    }
+  }
+  return count1==count2;
+}
