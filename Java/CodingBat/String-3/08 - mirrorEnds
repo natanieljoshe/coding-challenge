@@ -1,0 +1,23 @@
+public String mirrorEnds(String string) {
+  
+  String res="";
+  
+  if(string.length()<=1){
+    return string;
+  }
+  
+  if(Character.toLowerCase(string.charAt(0)) ==  Character.toLowerCase(string.charAt(string.length()-1))){
+    for(int i=0,j=string.length()-1; i<string.length() && Character.toLowerCase(string.charAt(i)) == Character.toLowerCase(string.charAt(j));i++,j--){
+          res+=string.charAt(i);
+      }
+    }
+  return res;
+}
+
+/*
+xxx
+i=2
+j=0
+res=xxx
+
+*/
