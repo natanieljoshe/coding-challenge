@@ -1,0 +1,23 @@
+public int maxBlock(String str) {
+  
+  int res=0;
+  int temp=1;
+  
+  for(int i=0;i<str.length()-1;i++){
+    
+    //assume the next character is the same
+    temp++;
+    
+    //if different, change temp=1
+    if(str.charAt(i)!=str.charAt(i+1)){
+      temp=1;
+    }
+    
+    if(temp>res){
+      res=temp;
+    }
+    
+  }
+  return res;
+}
+
