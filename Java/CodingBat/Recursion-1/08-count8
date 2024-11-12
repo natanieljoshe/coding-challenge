@@ -1,0 +1,30 @@
+public int count8(int n) {
+  
+  
+  if(n<1000){
+    
+    if(n==88){
+      return 3;
+    }else if(n<10){
+      
+      if(n==8){
+        return 1;
+      }else{
+        return 0;
+      }
+      
+    }
+    
+    if(n<100){
+      return count8(n/10)+count8(n%10);
+    }else{
+      return count8(n/10)+count8(n%100);
+    }
+    
+    
+  }
+  
+  
+  return count8(n/100)+count8(n%100);
+  
+}
