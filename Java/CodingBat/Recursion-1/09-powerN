@@ -1,0 +1,10 @@
+public int powerN(int base, int n) {
+  
+  if(n==1){
+    return base;
+  }
+  n--;
+  
+  return powerN(base,n)*powerN(base,1);
+  
+}
